@@ -1,0 +1,35 @@
+.callout {
+    max-width: 425px;
+    max-height: 350px;
+	margin: 10px;
+    border: 5px;
+    padding: 15px;
+    background-color: rgb(37, 66, 134);
+    color: #fff
+}
+
+.callout img {
+    float: right;
+    margin: 10px;
+    border: 5px;
+    border-color: #000;
+    padding: 5px;
+    background-color: #e5dcbc;
+    width: 100px;
+    height: auto;
+}
+
+blockquote {
+	margin: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+cite {
+	display: block;
+    border-top: dashed white;
+    padding-top: 7px;
+    text-align: right;
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: smaller;
+}
