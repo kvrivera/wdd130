@@ -1,6 +1,14 @@
 nav {
-    background: steelblue;
+    background: #7fc8f8;
     padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #094074;
+}
+a:link {
+    color: #094074;
+}
+a:visited {
+    color:#4c191b
 }
 nav a{
     color: white;
@@ -8,15 +16,48 @@ nav a{
     padding: 20px;
 }
 h1 {
-    color: steelblue;
+    color: #094074;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
 }
-img {
+main {
+    background-color: #f5cac3;
+    text-align: center;
+}
+main img {
     width: 150px;
     height: auto;
-    border: 1px solid steelblue;
+    border: 1px solid #094074;
     padding: 2px;
     box-shadow: 0 0 30px gray;
+    
 }
 p {
-    padding: 10px;
+    padding: 0;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #4c191b;
+}
+aside {
+    width: 30rem;
+    margin: 2rem;
+    border: 1px #094074;
+    box-shadow: 0 0 30px gray;
+    border-radius: 25px;
+    padding: 1rem;
+    background-color: #7fc8f8;
+    color: #4c191b;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+aside img {
+    width: 200px;
+    height: auto;
+    border: 1px solid #094074;
+    padding: 2px;
+}
+footer {
+    margin-top: 15px;
+    border-top: dotted #094074;
+    text-align: center;
 }
