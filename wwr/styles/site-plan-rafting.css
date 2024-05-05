@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Trade+Winds&display=swap');
+
+body {
+    max-width: 960px;
+    padding: 20px;
+    font-family: var(--paragraph-font);
+}
+
+:root {
+    --primary-color: #496767;
+    --secondary-color: #a06f2c;
+    --accent1-color: #216db2;
+    --accent2-color: #a3bdc4;
+    
+    --heading-font: 'Trade Winds', normal;
+    --paragraph-font: 'Raleway', sans-serif;
+
+    --nav-background-color: #a3bdc4;
+    --nav-link-color: #496767;
+    --nav-hover-link-color: #a3bdc4;
+    --nav-hover-background-color: #a06f2c;
+    
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+header {
+    padding: 20px;
+    background-color: var(--accent2-color);
+}
+
+p {
+    padding: 25px;
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+    color: var(--nav-link-color)
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
