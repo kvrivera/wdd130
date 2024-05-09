@@ -33,6 +33,7 @@ header {
 
 p {
     padding: 25px;
+    font-family: var(--paragraph-font);
 }
 
 nav {

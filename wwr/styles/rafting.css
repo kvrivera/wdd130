@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Trade+Winds&display=swap');
+
+:root {
+    --primary-color: #496767;
+    --secondary-color: #a06f2c;
+    --accent1-color: #216db2;
+    --accent2-color: #a3bdc4;
+
+    --heading-font: 'Trade Winds', normal;
+    --paragraph-font: 'Raleway', sans-serif;
+
+    --nav-background-color: #a3bdc4;
+    --nav-link-color: #496767;
+    --nav-hover-link-color: #a3bdc4;
+    --nav-hover-background-color: #a06f2c;
+}
+* {
+    max-width: 80rem; /* Adjust as needed */
+}
+h1 {
+    font-family: var(--heading-font);
+    color:#ebe8f8;
+    text-align: center;
+
+}
+h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+p {
+    padding: 25px;
+    font-family: var(--paragraph-font);
+    color: var(--primary-color);
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    margin: 2px;
+    border: 2px var(--accent1-color);
+    padding: 5px;
+}
+
+.hero div {
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+
+.hero img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 270px;
+    width: 100%;
+    background-color: var(--accent1-color);
+    color: #ebe8f8;
+    text-align: center;
+    opacity: 90%;
+}
+
+.hero article {
+    position: absolute;
+    top: 400px;
+    width: 100%;
+    background-color: var(--accent2-color);
+    opacity: 90%;
+}
+
+.hero article img {
+    float: right;
+    width: 150px;
+    height: auto;
+    padding-top: 10px;
+
+}
