@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 nav {
     background: #7fc8f8;
     padding: 10px;
@@ -27,18 +33,20 @@ main {
 main img {
     width: 150px;
     height: auto;
+    margin: 1rem;
     border: 1px solid #094074;
     padding: 2px;
     box-shadow: 0 0 30px gray;
-    
+    float: right
 }
 p {
-    padding: 0;
+    padding: 0.65rem;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #4c191b;
 }
 aside {
+    position: relative;
     width: 30rem;
     margin: 2rem;
     border: 1px #094074;
@@ -56,8 +64,26 @@ aside img {
     border: 1px solid #094074;
     padding: 2px;
 }
+aside h2 {
+    position: absolute;
+    top: 25px;
+    right: 150px;
+    color: #094074;
+
+}
 footer {
     margin-top: 15px;
     border-top: dotted #094074;
     text-align: center;
+}
+
+/* Class Selectors */
+
+.box {
+    margin: 1rem;
+    border: 1px dotted #4c191b;
+    padding: 1rem;
+    background-color: #7fc8f8;
+    color: #f5cac3;
+    
 }
