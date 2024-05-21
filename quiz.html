@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/quiz.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>HTML and CSS Quiz</h1>
+    </header>
+
+    <main>
+        <form>
+            <fieldset class="grid1">
+                <legend>
+                    Part I: HTML
+                </legend>
+
+                <!-- Question 1 (text answer)-->
+                <label for="q1">1. HTML stands for "Hypertext _________ Language.</label>
+                <input type="text" id="q1" name="q1">
+                
+                <!-- Question 2 (long-answer, ie: textarea)-->
+                <label for="q2">2. What are three examples of best design practices
+                    for form design?
+                </label>
+                <textarea id="q2" name="q2" rows="3" placeholder="Write your 3 examples here"></textarea>
+
+            </fieldset>
+
+            <fieldset class="grid2">
+                    <legend>
+                        Part II: CSS
+                    </legend>
+
+                    <!-- Question 3 (select element)-->
+                    
+                    <label for="q3">What is the notation used for the universal selector in CSS mark-up?
+                    </label>
+                    <select id="q3" name="q3">
+                        <option value="--">--</option>
+                        <option value="^!">^!</option>
+                        <option value="*">*</option>
+                        <option value="uni*">uni*</option>
+                    </select>
+                <!-- Question 4 -->
+                <label for="q4">What is the value that follows the "#" character when specifying the colour "black" in CSS? You may use shorthand (3 digits).
+                </label>
+                <input type="number">
+            </fieldset>
+
+            <fieldset class="nb">
+                <button type="submit">Submit Quiz</button>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        &copy;2024 | HTML and CSS Quiz | Kat Rivera
+    </footer>
+</body>
+</html>

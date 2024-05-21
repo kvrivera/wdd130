@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/poll-form.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form - User Poll</title>
+</head>
+<body>
+    <header>
+        <h1>WDD 130 | HTML Form - User Poll</h1>
+    </header>
+
+    <main>
+        <!--User Form, purpose: practice creating a form using HTML
+        which takes user input in various forms-->
+        <form>
+            <fieldset>
+                <legend> <!--This creates a sort of 'title' for this section of the form,
+                which separates it from other areas of the form. User interface looks nice this way!-->
+                    Contact Information
+                </legend>
+                <div class="form-item column2">
+                    <label for="fullname">Full name: <input type="text" id="fullname" name="fullname"></label>
+                </div>
+                <!--You can nest your input elements within the label elements, as shown above-->
+                <!--You can also leave them separate-->
+                <div class="form-item column2">
+                    <label for="useremail">Email: <input type="text" id="useremail" name="useremail"></label> 
+                </div>
+                </fieldset>
+
+            <fieldset>
+                <legend>
+                    Questions
+                </legend>
+                <!--First question under "questions" heading-->
+                <div class="form-item column1">
+                    <label for="favbrowser">What is your favourite browser?
+                        <select id="favbrowser" name="favbroswer">
+                            <option value="chrome">Chrome</option>
+                            <option value="explorer">Internet Explorer</option>
+                            <option value="firefox">Mozilla Firefox</option>
+                        </select>
+                </label>
+                </div>
+                <!--Second question under "questions" heading-->
+                <div class="form-item column1">
+                    <label for="pet">Do you have a household pet? <input type="checkbox" id="pet" name="pet"></label>
+                </div>
+                <!--Third question under "questions" heading-->
+                <label for="placeslived">List the places you have lived: <br>
+                    <textarea id="placeslived" name="placeslived" rows="4" placeholder="Spare 'Oom, Narnia; Mordor, Middle-earth; Madhatter's Tea Party Table, Wonderland"></textarea> </label>
+            </fieldset>
+
+            <!--Submit button-->
+            <fieldset>
+                <button type="submit">Submit Poll</button>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        &copy;2024 | Kat | WDD130
+    </footer>
+</body>
+</html>

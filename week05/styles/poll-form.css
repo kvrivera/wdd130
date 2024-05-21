@@ -1,0 +1,103 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, 
+    sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(90, 86, 86);
+    text-align: center;
+}
+
+header, 
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(40, 40, 119);
+    text-align: center;
+}
+
+form {
+    display: grid;
+    background-color: rgb(234, 231, 231);
+    width: 40rem;
+    margin: 1rem;
+    padding: 1rem;
+    border: solid gainsboro;
+    border-radius: .5rem;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 0.5rem 0;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: 1rem;
+    margin: .25rem;
+    border: solid #d7d4d4;
+    padding: .75rem;
+    text-align: left;
+}
+
+legend {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:larger;
+    color: rgb(40, 40, 119)
+}
+
+label {
+    text-align: right; /* in the assignment it asks you to align this as 'right' but it doesn't result in the same look as the example given */
+    padding-right: .5rem; 
+}
+
+input, /* remember your commas here :) */
+select,
+textarea {
+    padding: .5rem;
+    font-size: 1.1rem;
+    width: auto;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    vertical-align: bottom;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    width: 118px;
+    height: 40px;
+    font-size: 1.1rem;
+    background-color: navy;
+    color: white;
+    border: none;
+    border-radius: .5rem;
+}
+
+button:hover {
+    background-color: rgb(90, 118, 49);
+}
+
+footer {
+    text-align: center;
+    border-top: solid #d7d4d4;
+    padding: .5rem;
+    color: rgb(154, 151, 151);
+}
+
+/* not necessary but interesting to see how this part is done */
