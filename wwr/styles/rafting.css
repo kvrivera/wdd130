@@ -9,45 +9,63 @@
     --heading-font: 'Trade Winds', normal;
     --paragraph-font: 'Raleway', sans-serif;
 
-    --nav-background-color: #d3dee2;
+    --nav-background-color: #216db2;
     --nav-link-color: #496767;
     --nav-hover-link-color: #a3bdc4;
     --nav-hover-background-color: #a06f2c;
 }
 
 * {
-    max-width: 80rem; /* Adjust as needed */
+    max-width: 100%; /* Adjust as needed */
 }
 
+/* header (used on every page of website) */
 header {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1.5fr 2fr;
     background-color: var(--nav-background-color);
 }
 
-nav {
-    display: flex;
-    flex: 1 1 100%;
-    align-content: space-around;
-    justify-content: space-around;
-    font-family: var(--paragraph-font);
+header img {
+    padding: 0;
+    border: 2px solid #a06f2c;
+    border-radius: 3rem;
+    margin: 2rem;
+}
 
+.nav-flex {
+    display: flex;
+    font-family: var(--paragraph-font);
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
 }
 
 nav a {
-    display: block;
-    max-width: 3rem;
-    max-height: 2rem;
-    padding: 25px;
-    border: 1px black dotted;
-
-
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border: solid .1rem #a3bdc4;
+    border-radius: .5rem;
+    margin: 0;
+    background-color: #c2e1ff;
+    color: #496767
 }
+
+nav a:hover {
+    background-color: #a06f2c;
+    color: #fff;
+    border-color: #5a3d14
+}
+
 h1 {
     font-family: var(--heading-font);
     color:#ebe8f8;
     text-align: center;
-
 }
 
 h2, h3, h4, h5, h6 {
@@ -73,7 +91,8 @@ img {
     padding: 5px;
 }
 
-.hero div {
+/* hero css */
+.hero {
     position: relative;
     width: 100%;
     margin: auto;
@@ -84,11 +103,15 @@ img {
     display: block;
     width: 100%;
     height: auto;
+    padding: 0;
+    border: none;
+    margin: 0;
+    margin-top: .5rem
 }
 
 .hero h1 {
     position: absolute;
-    top: 270px;
+    top: 20px;
     width: 100%;
     background-color: var(--accent1-color);
     color: #ebe8f8;
@@ -96,38 +119,147 @@ img {
     opacity: 90%;
 }
 
-.hero article {
+.hero-grid {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr;
     position: absolute;
-    top: 400px;
+    top: 100px;
     width: 100%;
     background-color: var(--accent2-color);
     opacity: 90%;
 }
 
-.hero article img {
-    float: right;
-    width: 150px;
+.hero-grid img {
+    /* float: right; */
+    width: auto;
     height: auto;
     padding-top: 10px;
-
-}
-
-.history-grid {
-    display: grid;
-    grid-template-rows: auto 1fr;
-    grid-template-columns: 1fr;
-    grid-auto-rows: minmax(100px, auto);
-}
-
-#subgrid {
-    grid-template-columns: subgrid;
-    grid-template-rows: 1fr 3fr;
-    grid-column: 1/4;
-    grid-row: 2/3;
-
+    margin: auto;
 }
 
 
+/* history section on about us page */
+.history-flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    border: solid .25rem #216db2;
+    border-radius: .5rem;
+    margin-top: .5rem;
+}
+
+.history-flex img {
+    padding: 0;
+    border: solid .1rem #216db2;
+    border-radius: 0.5rem;
+    margin: 1rem;
+}
+
+.history-flex p {
+    padding: 0;
+    border: 0;
+    margin: 40px;
+}
+
+article.h2 {
+    flex: 6 100%;
+}
+
+article {
+    flex: 1 200px;
+}
+
+/* adventure section of about us page, flex */
+.adventure-flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 0;
+    border: solid .25rem #216db2;
+    border-radius: .5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.adventure-flex img {
+    max-width: 175px;
+    padding: 0;
+    border: solid .1rem #216db2;
+    border-radius: 0.5rem;
+    margin: .25rem;
+}
+
+.adventure-flex figcaption {
+    text-align: center;
+    font-family: var(--paragraph-font);
+    font-style: italic;
+}
+
+.adventure-flex h2 {
+    flex: 6 100%;
+}
+
+article {
+    flex: 1 200px;
+}
+
+
+/* contact us page css */
+
+/* employees div class */
+.employees-container {
+    display: flex;
+    flex-wrap: wrap;
+    border: .5rem solid #496767;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+/* images within the employees grid */
+.employees-container img {
+    width: 200px;
+    height: auto;
+    padding: 0;
+    border: solid #a06f2c;
+    margin: 1rem;
+}
+
+.employees-container article {
+    flex: 100px 200px;
+}
+
+/* footer css */
 footer {
     background-color: var(--nav-background-color);
+    color: #fff;
+    min-width: 100%;
+}
+
+footer img {
+    max-width: 50px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 0;
+    border: none;
+}
+
+.footer-grid p {
+    color: #fff;
+}
+
+.social-flex {
+    display: flex;
+    flex-wrap: row wrap;
+    padding: 1rem;
+    border: none;
+    margin: .5rem;
+    margin-right: 0;
 }
