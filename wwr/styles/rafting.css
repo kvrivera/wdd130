@@ -229,7 +229,7 @@ article {
 }
 
 .employees-container article {
-    flex: 100px 200px;
+    /*flex: 100px 200px; */
 }
 
 /* footer css */
@@ -257,7 +257,7 @@ footer img {
 
 .social-flex {
     display: flex;
-    flex-wrap: row wrap;
+    flex-flow: row wrap;
     padding: 1rem;
     border: none;
     margin: .5rem;
