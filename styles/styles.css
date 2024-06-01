@@ -13,12 +13,15 @@ nav {
     justify-content: space-around;
     align-items: center;
 }
+
 a:link {
     color: #094074;
 }
+
 a:visited {
     color:#4c191b
 }
+
 nav a{
     color: white;
     display: block;
@@ -27,6 +30,7 @@ nav a{
     font-size: 1.2rem;
     font-weight: 700;
 }
+
 h1 {
     color: #094074;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -34,6 +38,7 @@ h1 {
     border-bottom: 1px dashed #4c191b;
     padding-left: 1rem;
 }
+
 main {
     background-color: #f5cac3;
     text-align: center;

@@ -64,7 +64,7 @@ nav a:hover {
 
 h1 {
     font-family: var(--heading-font);
-    color:#ebe8f8;
+    color: var(--primary-color);
     text-align: center;
 }
 
