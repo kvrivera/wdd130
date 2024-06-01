@@ -22,7 +22,11 @@
     
     <main>
         <!-- company information, including:
-        address, phone number(s), email, small embedded google map-->
+        address: 35 Westwood Forest Lane, Bolton Landing, NY 12814, United States
+        phone number(s): 333-333-4444
+        email contactus@wwrco.com
+        small embedded google map
+    -->
         
         <!-- 3 happy employees with descriptions -->
         <div><h2>Meet the Team</h2></div>
@@ -63,6 +67,81 @@
             </article>
         </section>
 
+        <!-- Contact Us Form -->
+        <form>
+            <!-- Get their contact information -->
+            <fieldset>
+                <!-- Ask for their name -->
+                
+                <div>
+
+                    <label for="name">Your name: 
+                        <input type="text" id="name" name="name">
+                    </label>
+                </div>
+                <!-- Ask for their email address -->
+                <div>
+                    <label for="email">Email address: 
+                        <input type="text" id="email" name="email">
+                    </label>
+                </div>
+            </fieldset>
+
+            <!-- Get the purpose for their form submission -->
+            <fieldset>
+                <legend> Select a topic: </legend>
+                
+                <!-- Each div is a radio button that can be selected. 
+                    Only one can be selected at a time-->
+                <div>
+                    <input type="radio" id="reason-for-inquiry" name="general-inquiry" value="general-inquiry" checked>
+                    <label for="general-inquiry">General Inquiry</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="reason-for-inquiry" name="reserveration-question" value="reserveration-question">
+                    <label for="reserveration-question">Reserveration Question</label>
+                </div>
+                
+                <div>
+                    <input type="radio" id="reason-for-inquiry" name="website-suggestion" value="website-suggestion">
+                    <label for="website-suggestion">Website Suggestion</label>
+                </div>
+            </fieldset>
+
+            <!-- Get the message from the user textarea input-->
+            <fieldset>
+                <legend>Give us the details:</legend>
+                <div>
+                    <label for="message">
+                        <textarea id="message" name="message" rows="4" placeholder="Type your message here..."></textarea>
+                    </label>
+                </div>
+
+                <!-- Checkbox labeled "Please subscribe me to the monthly newsletter"-->
+                <div>
+                    <input type="checkbox" id="newsletter" name="newsletter" checked>
+                    <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                </div>
+            
+            <!-- Submit button -->
+            </fieldset>
+                <button type="submit">Send Your Message</button>
+            <fieldset>
+
+            </fieldset>
+
+
+            
+            
+                
+                    
+                
+                    
+
+                
+            </fieldset>
+        </form>
         <!-- HTML form that asks for the following:
         user's name
         user's email
