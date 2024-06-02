@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Kat Rivera">
     <meta name="description" content="Contact page for WWR company. This page helps users connect with the company.">
-    <title>WWR Co. | Contact Us</title>
+    <title>White Water Rafting Co. | Contact Us</title>
 </head>
 <body>
     <header>
@@ -20,22 +20,44 @@
         </nav> 
 
     </header>
-    
+
     <main>
+        <div><h1>Contact Us</h1></div>
+
         <!-- company information, including:
-        address: 35 Westwood Forest Lane, Bolton Landing, NY 12814, United States
+        address: 
         phone number(s): 333-333-4444
         email contactus@wwrco.com
         small embedded google map
         -->
+        <div><h2>Where in the World</h2></div>
+
+        <section class="where">
+            <article class="where-column1">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2898.817318878238!2d-73.72259705643769!3d43.610951749289015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1717287978065!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </article>
+            
+            <article class="where-column2">
+                <p class="where-p">
+                    <b>Address:</b> 35 Westwood Forest Lane, Bolton Landing, NY 12814, United States
+                </p>
+                
+                <p class="where-p">
+                    <b>Phone number:</b> 333-333-4444
+                </p>
+                
+                <p class="where-p">
+                    <b>Email:</b> contactus@wwrco.com
+                </p>
+            </article>
+        </section>
         
-        <div><h1>Contact Us</h1></div>
 
         <!-- 3 happy employees with descriptions -->
         <div><h2>Meet the Team</h2></div>
         <section class="employees-container">
             <article>
-                <img src="images/employee.png">
+                <img src="images/employee.png" alt="WWR Co. Employee Brenda Bochman smiling at the camera.">
                 <h3>Brenda Bochman</h3>
                 <p>Brenda is our champion adventure leader. 29 years old and full
                 of life, she never misses an opportunity to take the waves at full
@@ -46,7 +68,7 @@
             </article>
 
             <article>
-                <img src="images/employee.png">
+                <img src="images/employee.png" alt="WWR Co. Employee Lenny Lordando smiling at the camera.">
                 <h3>Lenny Lordando</h3>
                 <p>
                 26 years in the industry has taught Lenny one thing: life is 
@@ -59,7 +81,7 @@
             </article>
 
             <article>
-                <img src="images/employee.png">
+                <img src="images/employee.png" alt="WWR Co. Employee Frederick Flunedrin smiling at the camera.">
                 <h3>Frederick "Footless Freddy" Flunedrin</h3>
                 <p>
                 Footless Freddy is our leader in family fun on the rapids. Freddy leads 
@@ -71,81 +93,72 @@
         </section>
 
         <!-- Contact Us Form -->
-        <form>
-            <!-- Get their contact information -->
-            <fieldset>
-                <!-- Ask for their name -->
-                
-                <div>
+        <div><h2>Get in Touch</h2></div>
+        <article class="form">
 
-                    <label for="name">Your name: 
-                        <input type="text" id="name" name="name">
-                    </label>
-                </div>
-                <!-- Ask for their email address -->
-                <div>
-                    <label for="email">Email address: 
-                        <input type="text" id="email" name="email">
-                    </label>
-                </div>
-            </fieldset>
-
-            <!-- Get the purpose for their form submission -->
-            <fieldset>
-                <legend> Select a topic: </legend>
-                
-                <!-- Each div is a radio button that can be selected. 
-                    Only one can be selected at a time-->
-                <div>
-                    <input type="radio" id="reason-for-inquiry" name="general-inquiry" value="general-inquiry" checked>
-                    <label for="general-inquiry">General Inquiry</label>
-                </div>
-
-                <div>
-                    <input type="radio" id="reason-for-inquiry" name="reserveration-question" value="reserveration-question">
-                    <label for="reserveration-question">Reserveration Question</label>
-                </div>
-                
-                <div>
-                    <input type="radio" id="reason-for-inquiry" name="website-suggestion" value="website-suggestion">
-                    <label for="website-suggestion">Website Suggestion</label>
-                </div>
-            </fieldset>
-
-            <!-- Get the message from the user textarea input-->
-            <fieldset>
-                <legend>Give us the details:</legend>
-                <div>
-                    <label for="message">
-                        <textarea id="message" name="message" rows="4" placeholder="Type your message here..."></textarea>
-                    </label>
-                </div>
-
-                <!-- Checkbox labeled "Please subscribe me to the monthly newsletter"-->
-                <div>
-                    <input type="checkbox" id="newsletter" name="newsletter" checked>
-                    <label for="newsletter">Please subscribe me to the monthly newsletter</label>
-                </div>
-            
-            <!-- Submit button -->
-            </fieldset>
-                <button type="submit">Send Your Message</button>
-            <fieldset>
-
-            </fieldset>
-
-
-            
-            
-                
+            <form>
+                <!-- Get their contact information -->
+                <fieldset>
+                    <!-- Ask for their name -->
                     
-                
-                    
+                    <div class="form-item">
 
+                        <label for="name">Your name: 
+                            <br><input type="text" id="name" name="name">
+                        </label>
+                    </div>
+                    <!-- Ask for their email address -->
+                    <div class="form-item">
+                        <label for="email">Email address: 
+                            <br>
+                            <input type="text" id="email" name="email">
+                        </label>
+                    </div>
+                </fieldset>
+
+                <!-- Get the purpose for their form submission -->
+                <fieldset>
+                    <legend> Select a topic: </legend>
+                    
+                    <!-- Each div is a radio button that can be selected. 
+                        Only one can be selected at a time-->
+                    <div class="form-item">
+                        <input type="radio" id="general-inquiry" name="general-inquiry" value="general-inquiry" checked>
+                        <label for="general-inquiry">General Inquiry</label>
+                    </div>
+
+                    <div class="form-item">
+                        <input type="radio" id="reserveration-question" name="reserveration-question" value="reserveration-question">
+                        <label for="reserveration-question">Reserveration Question</label>
+                    </div>
+                    
+                    <div class="form-item">
+                        <input type="radio" id="website-suggestion" name="website-suggestion" value="website-suggestion">
+                        <label for="website-suggestion">Website Suggestion</label>
+                    </div>
+                </fieldset>
+
+                <!-- Get the message from the user textarea input-->
+                <fieldset>
+                    <legend>Give us the details:</legend>
+                    <div class="form-item">
+                        <label for="message">
+                            <textarea id="message" name="message" rows="4" placeholder="Type your message here..."></textarea>
+                        </label>
+                    </div>
+
+                    <!-- Checkbox labeled "Please subscribe me to the monthly newsletter"-->
+                    <div class="form-item">
+                        <input type="checkbox" id="newsletter" name="newsletter" checked>
+                        <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                    </div>
                 
-            </fieldset>
-        </form>
-        <!-- HTML form that asks for the following:
+                <!-- Submit button -->
+                </fieldset>
+                    <button type="submit">Send Your Message</button>  
+            </form>
+        </article>
+            <!-- HTML form that asks for the following:
         user's name
         user's email
         purpose of the message (radio buttons: general inquiry, reserveration question, website suggestion)

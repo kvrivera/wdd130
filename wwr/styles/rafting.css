@@ -209,6 +209,31 @@ article {
 
 /* contact us page css */
 
+/* Google maps and other info */
+.where {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.where-column1 {
+    padding: 0;
+    border: none;
+    margin: 2rem;
+    justify-content: center;
+}
+
+.where-column2 {
+    align-items: center;
+    justify-content: center;
+
+}
+
+.where-p {
+    text-align: left;
+}
+
 /* employees div class */
 .employees-container {
     display: flex;
@@ -228,10 +253,76 @@ article {
     margin: 1rem;
 }
 
-.employees-container article {
-    /*flex: 100px 200px; */
+/* .employees-container article {
+    flex: 100px 200px;
+}  */
+
+/* Contact Us form on Contact Us page*/
+
+.form {
+    display: block;
+    text-align: center;
 }
 
+form {
+    display: inline-block; /* this autosizes it to content I believe */
+    width: 25rem;
+    margin: 1rem;
+    padding: 1rem;
+    border: solid;
+    border-radius: .5rem;
+    
+}
+
+fieldset {
+    display: grid;
+    grid-gap: 1rem;
+    margin: .25rem;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    text-align: left;
+}
+
+legend {
+    font-family: var(--paragraph-font);
+    font-size: larger;
+    color: #496767;
+}
+
+label {
+    text-align: left;
+    padding-right: .5rem
+}
+
+input,
+select,
+textarea {
+    padding: .5rem;
+    font-size: 1.1rem;
+    width: auto;
+}
+
+input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    vertical-align: bottom;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    width: 118px;
+    height: 60px;
+    font-size: 1.1rem;
+    border: solid #496767;
+    border-radius: .5rem;
+}
+
+button:hover {
+    background-color: #a06f2c;
+    color: #fff;
+}
 /* footer css */
 footer {
     background-color: var(--nav-background-color);
