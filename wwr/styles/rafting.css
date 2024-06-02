@@ -206,6 +206,18 @@ article {
     flex: 1 200px;
 }
 
+/* Trips page */
+/* call to action */
+.call-to-action {
+    display: flex;
+    background-color: #c2e1ff;
+}
+
+/* hardcore featured adventures */
+.featured {
+    display: flex;
+    border: solid #a3bdc4
+}
 
 /* contact us page css */
 
