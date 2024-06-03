@@ -206,11 +206,107 @@ article {
     flex: 1 200px;
 }
 
+/* Index (Home) Page */
+.index-flex {
+    display: flex;
+    margin: 1rem;
+}
+
+.index-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.index-grid h2 {
+    grid-column: 1/4;
+}
+
+.image1 {
+    grid-column: 1/2;
+    grid-row: 2/5;
+}
+
+.p1 {
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+
+.p2 {
+    grid-column: 2/4;
+    grid-row: 3/4;
+}
+
+.button1 {
+    grid-column: 2/4;
+    grid-row: 4/5;
+}
+
+.image2 {
+    grid-column: 1/2;
+    grid-row: 5/8;
+}
+
+.p3 {
+    grid-column: 2/4;
+    grid-row: 5/6;
+}
+
+.p4 {
+    grid-column: 2/4;
+    grid-row: 6/7;
+}
+
+.button2 {
+    grid-column: 2/3;
+    grid-row: 7/8;
+}
+
+.button3 {
+    grid-column: 3/4;
+    grid-row: 7/8;
+}
+
+.image3 {
+    grid-column: 1/2;
+    grid-row: 8/11;
+}
+
+.p5 {
+    grid-column: 2/4;
+    grid-row: 8/9;
+}
+
+.p6 {
+    grid-column: 2/4;
+    grid-row: 9/10;
+}
+
+.button4 {
+    grid-column: 2/4;
+    grid-row: 10/11;
+}
+
+.image4 {
+    grid-column: 1/2;
+    grid-row: 12/14;
+}
+
+.p7 {
+    grid-column: 2/4;
+    grid-row: 12/13;
+}
+
+.button5 {
+    grid-column: 2/4;
+    grid-row: 13/14;
+}
 /* Trips page */
 /* call to action */
 .call-to-action {
     display: flex;
     background-color: #c2e1ff;
+    border-radius: .5rem;
 }
 
 .call-to-action p {
@@ -251,6 +347,7 @@ article {
 .featured h3, p {
     color: #ebe8f8;
 }
+
 /* Trips table */
 
 .scroll { /* make the table scroll if it's too large for the page */
@@ -274,7 +371,10 @@ table {
 
 table img {
     position: float;
+    min-width: 7rem;
+    max-width: 12rem;
 }
+
 th,
 td {
     padding: 15px;
