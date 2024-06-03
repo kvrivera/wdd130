@@ -23,12 +23,12 @@
 
     <main>
         <!-- One large full-width image that includes a heading message-->
-        <div class="hero">
+        <div class="index-hero">
             <img src="images/welcome-image.jpeg" alt="Hero image of a super fun, super awesome rafting experience">
             <h1>
                 Whitewater Rafting Co.
             </h1>
-            <article class="hero-grid">
+            <article class="index-hero-grid">
                 <p>
                     Congratulations! You just found your next great adventure.
                 </p>
@@ -36,7 +36,7 @@
         </div>
         
         <!-- Newletter sign-up form with name and email-->
-        <div class="index-flex">
+        <div class="index-grid-1">
             <section class="form">
                 <h2>Want the Latest WWR Co. Scoop? </h2>
                 <form>
@@ -80,7 +80,7 @@
             </section>
     
             <!-- Call to action with link compelling visitors to visit Trips page-->
-            <section class="call-to-action">
+            <section class="index-call-to-action">
                 <article>
                     <img src="images/trips-action.jpeg" alt="An image from a trip hosted by WWR Co.">
                 </article>
@@ -95,7 +95,9 @@
                         the ride of your life!
                     </p>
                     
-                    <a href="trips.html"><button type="submit">Pre-planned Trips</button></a>  
+                    <form class="button-form">
+                        <button formaction="trips.html">Pre-planned Trips</button>
+                    </form>
                 </article>
             </section>
     
@@ -109,8 +111,8 @@
             
             <img src="images/preplanned-trips.jpeg" alt="A picture of a brown-water river leading to a hilled backdrop. There is a blue raft floating peacefully along in the center." class="image1">
             <p class="p1">
-                Are there pre-planned adventures that I can choose from,
-                or do I have to plan everything myself?
+                <i>Are there pre-planned adventures that I can choose from,
+                or do I have to plan everything myself?</i>
             </p>
 
             <p class="p2">
@@ -119,11 +121,15 @@
                 together to make it happen!
             </p>
 
-            <div class="button1"><a href="trips.html"><button type="submit">Trips</button></a></div>
+            <div class="button1">
+                <form class="button-form">
+                    <button formaction="trips.html">Trips</button>
+                </form>
+            </div>
             
             <img src="images/rich-history.jpeg" alt="Two yellow rafts sit beached. The image looks out at a shore and calm waters leading to a point between two large hills." class="image2">
             <p class="p3">
-                I'd love to learn more about your guides and your company! Where can I go to find out more?
+                <i>I'd love to learn more about your guides and your company! Where can I go to find out more?</i>
             </p>
 
             <p class="p4">
@@ -132,14 +138,23 @@
                 a good time. We'd love for you to come say 'hello'!
             </p>
 
-            <div class="button2"><a href="contact.html"><button type="submit">Meet the Team</button></a></div>
-            <div class="button3"><a href="about.html"><button type="submit">Our Rich History</button></a></div>
+            
+            <div class="button2">
+                <form class="button-form">
+                    <button formaction="contact.html">Meet Our Team</button>
+                </form>
+            </div>    
+            <div class="button3">
+                <form class="button-form">
+                    <button formaction="about.html">Our Rich History</button>
+                </form>
+            </div>
             
 
             <img src="images/insurance.jpeg" alt="A team of rafters work together to haul their raft overhead." class="image3">
             <p class="p5">
-                Are there pre-planned adventures that I can choose from,
-                or do I have to plan everything myself?
+                <i>Are there pre-planned adventures that I can choose from,
+                or do I have to plan everything myself?</i>
             </p>
 
             <p class="p6">
@@ -148,7 +163,11 @@
                 together to make it happen!
             </p>
 
-            <div class="button4"><a href="https://www.gopher.com/serp?q=rafting%20travel%20insurance&segment=go.74&s1aid=9264565770&s1cid=17318701842&s1agid=137014902476&s1kid=dsa-19959388920&network_type=g&utm_source=adwords&gad_source=1&gclid=Cj0KCQjw0_WyBhDMARIsAL1Vz8uOwAhxuflHy79Qf-kmT-4mDbemIkDwSiHSbAcgtnjAlAZQ5QvL7rYaArddEALw_wcB"><button type="submit">Find Insurance</button></a></div>
+            <div class="button4">
+                <form class="button-form">
+                    <button formaction="https://www.gopher.com/serp?q=rafting%20travel%20insurance&segment=go.74&s1aid=9264565770&s1cid=17318701842&s1agid=137014902476&s1kid=dsa-19959388920&network_type=g&utm_source=adwords&gad_source=1&gclid=Cj0KCQjw0_WyBhDMARIsAL1Vz8uOwAhxuflHy79Qf-kmT-4mDbemIkDwSiHSbAcgtnjAlAZQ5QvL7rYaArddEALw_wcB">Find Insurance</button>
+                </form>
+            </div>
             
             
             <h2>Still have questions?</h2>
@@ -159,7 +178,9 @@
                 We've got answers!</p>
 
             <div class="button5">
-                <a href="contact.html"><button type="submit">Get in Touch</button></a>  
+                <form class="button-form">
+                    <button formaction="contact.html">Get in Touch</button>
+                </form> 
             </div>
 
         </div>
