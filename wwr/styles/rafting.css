@@ -213,11 +213,97 @@ article {
     background-color: #c2e1ff;
 }
 
+.call-to-action p {
+    color: #5a3d14
+}
+
+.call-to-action img {
+    padding: 0;
+    border: 2px solid #216db2;
+    border-radius: .5rem;
+}
+
 /* hardcore featured adventures */
 .featured {
+    overflow: scroll;
     display: flex;
-    border: solid #a3bdc4
+    border: solid #a3bdc4;
+    justify-content: space-around;
+    align-items: center;
 }
+
+.featured img {
+    padding: 0;
+    border: 2px solid #216db2;
+    border-radius: .5rem;
+    margin: .70rem;
+    max-width: 90%;
+}
+
+.featured section {
+    border: solid #67828a;
+    border-radius: .5rem;
+    margin: 2rem;
+    background-color: #67828a;
+    min-width: 15rem;
+}
+
+.featured h3, p {
+    color: #ebe8f8;
+}
+/* Trips table */
+
+.scroll { /* make the table scroll if it's too large for the page */
+    overflow: scroll;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table {
+    display: inline-block;
+    border: none;
+    border-collapse: collapse;
+    margin: 1rem;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+table img {
+    position: float;
+}
+th,
+td {
+    padding: 15px;
+    border-left: 1px solid;
+}
+
+.table-img {
+    border: none;
+}
+th {
+    background-color: #5e7880;
+    color: #fff;
+}
+
+.adv-name {
+    background-color: #a06f2c;
+    color: #fff;
+}
+
+.adv-name:hover {
+    font-family: var(--heading-font);
+}
+
+td:hover /* hovering over a table cell */ {
+    background-color: #216db2;
+    color: #fff;
+}
+
+
 
 /* contact us page css */
 
